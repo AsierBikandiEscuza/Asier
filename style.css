@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+fieldset {
+    margin: 10px;
+    height: 100;
+}
+
+li {
+    list-style: none;
+    margin: 1.1rem;
+}
+
+label {
+    display: block;
+}
+
+input {
+    width: 100%;
+}
+
+/**
+ * ############
+ * ## +750px ##
+ * ############
+*/
+
+@media (min-width: 700px) {
+    body > form > fieldset {
+        font-size: 1.3rem;
+    }
+    ul.form-content {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+/**
+ * #############
+ * ## +1000px ##
+ * #############
+*/
+
+@media (min-width 1000px) {
+    body > form > fieldset {
+        font-size: 0.8rem;
+    }
+    form {
+        margin: 2rem 3 rem 3.5rem 3rem;
+    }
+    body > form > fieldset:first-of-type > ul.form-content {
+        display: grid;
+    }
+}
+    
